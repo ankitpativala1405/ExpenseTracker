@@ -1,0 +1,28 @@
+.income {
+    color: #28a745;
+  }
+  .expense {
+    color: #dc3545;
+  }
+  .transaction-list li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dee2e6;
+    padding: 0.5rem 0;
+  }
+
+  #categoryanddate {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  #categoryanddate .mb-3 {
+    flex: 1;
+  }
+
+  button{
+    background-color:  #c4747c !important;
+    border: none;
+    color: black !important;
+  }
