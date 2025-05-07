@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Income - Expense Tracker</title>
+<link rel="stylesheet" href="../CSS/IncomeUpdate.css">
+</head>
+<body>
+  <h1>Income Tracker</h1>
+  <form id="income-form" >
+    <label for="source">Income Source</label>
+    <input type="text" id="source" name="source" placeholder="Salary, Freelance, etc." required />
+
+    <label for="amount">Amount ($)</label>
+    <input type="number" id="amount" name="amount" placeholder="Enter amount" step="0.01" min="0.01" required />
+
+    <label for="date">Date</label>
+    <input type="date" id="date" name="date" required />
+
+    <button type="submit">Add Income</button>
+    <p>Back to Home Page?<a href="/ExpenseTracker/index.html">Click Here</a></p>
+  </form>
+</body>
+</html>
+

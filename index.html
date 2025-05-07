@@ -10,29 +10,29 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style></style>
-    <link rel="stylesheet" href="/CSS/index.css" />
+    <link rel="stylesheet" href="./Assets/CSS/index.css" />
   </head>
   <body class="bg-light">
     <div class="container my-5">
       <div class="row justify-content-center">
         <div class="col-md-8">
-          <h2 class="text-center mb-4">💰 Expense Tracker</h2>
+          <h2 class="text-center mb-4">Expense Tracker</h2>
 
           <!-- Balance -->
           <div class="card mb-3">
             <div class="card-body text-center">
               <p class="text-muted mb-1">Your Balance</p>
-              <h4 class="mb-0">₹1,230.00</h4>
+              <h4 class="mb-0" id="ShowBalance">₹1,230.00</h4>
             </div>
           </div>
 
           <!-- Income / Expense Summary -->
           <div class="row mb-3">
-            <div class="col">
+            <div class="col" id="IncomeDiv">
               <div class="card text-center">
                 <div class="card-body">
                   <p class="income fw-semibold mb-1">Income</p>
-                  <h5 class="mb-0">₹2,500</h5>
+                  <h5 class="mb-0" id="IncomeBalance">2500</h5>
                 </div>
               </div>
             </div>
@@ -40,7 +40,7 @@
               <div class="card text-center">
                 <div class="card-body">
                   <p class="expense fw-semibold mb-1">Expense</p>
-                  <h5 class="mb-0">₹1,270</h5>
+                  <h5 class="mb-0" id="ExpenceBalance">1270</h5>
                 </div>
               </div>
             </div>
@@ -59,7 +59,7 @@
                     type="text"
                     class="form-control"
                     id="description"
-                    placeholder="e.g. Rent"
+                    placeholder="Enter Your Description"
                   />
                 </div>
 
@@ -92,7 +92,7 @@
                     type="number"
                     class="form-control"
                     id="amount"
-                    placeholder="Enter amount (use '-' for expense)"
+                    placeholder="Enter Your amount"
                   />
                 </div>
 
@@ -210,5 +210,6 @@
       </div>
     </div>
   </body>
-  <script src="/JS/chart.js"></script>
+  <script src="./JS/index.js"></script>
+  <!-- <script src="./JS/chart.js"></script> -->
 </html>
